@@ -5,6 +5,8 @@ import type { GameState } from './types.js'
  *
  * Singleton class that manages the local storage.
  */
+LocalStorageManager.storage.setItem('bestScore', score.toString())
+
 export class LocalStorageManager {
   /** Storage */
   static storage: Storage = window.localStorage
